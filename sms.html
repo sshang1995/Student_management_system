@@ -1,0 +1,121 @@
+<!doctype html>
+<html>
+<head>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="assignment.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+	  <form id="firstform">
+	  	<fieldset>
+	  	    <legend>Student Information</legend>
+        	First Name: <input type="text" name="firstname" id="firstname" required> 
+        	<br>
+        	Last Name: <input type="text" name="lastname" id="lastname" required> 
+        	<br>
+        	Email: <input type="email" name="email" id="email" > 
+            <br>
+            Location: <input type="text" name="location" id="location" placeholder="street, city, state" >
+            <br>
+
+            <div id="drag">
+            <p draggable="true" id="1">Piscataway</p>
+            <p draggable="true" id="2">California</p>
+            <p draggable="true" id="3">Buffalo</p>
+            <p draggable="true" id="4">Long Island</p>
+            <p draggable="true" id="5">Chicago</p>
+        	</div>
+
+            Phone: <input type="tel" name="phone" id="phone" pattern="[0-9]{10}"> 
+            <br>
+            Address: Communication: <input type="text" name="communication" id="communication" placeholder="street, city, state" >
+            <br>
+            Address: Permanent: <input type="text" name="permanent" id="permanent" placeholder="city, country">
+            <br>
+            Marks: English: <input type="numbers" name="english" id="english" placeholder="0-100" > <br>
+            Marks: Science: <input type="numbers" name="science" id="science" placeholder="0-100"> <br>
+            Marks: Computers: <input type="numbers" name="computers" id="computers" placeholder="0-100" > <br>
+            Marks: Hardware: <input type="numbers" name="hardware" id="hardware" placeholder="0-100"> 
+            <br>
+			<br>
+            <input type="submit" id ="submit" value="Submit" >
+
+         </fieldset>
+
+        </form>	
+        <br>
+        <br>
+        <br>
+
+	<div class="options">
+		<strong>Rows:</strong>
+		<select id="dropdown" default="10">
+			<option value ='10'>10</option>
+			<option value ='20'>20</option>
+			<option value ='50'>50</option>
+			<option value ='100'>100</option>
+		</select>
+	<div>	
+		<br>
+
+		<label for='student_id'>student ID:</label>
+		<input type = "number" id = "student_id" min="0" max="200"/>
+
+		<input type ="button" id ="detail" value ="Show more details"/>
+
+		<input type ="button" id ="edit" value ="Edit"/>
+
+	    <input type ="button" id ="delete" value ="Delete"/>
+	    <br>
+	    <br>
+
+	    <input type="text" name="searchdata" id="searchdata" placeholder="search first name, last name, location, phone..."> 
+	    <input type ="button" id ="search" value ="Search"/>
+
+	    <br>
+	    <br>
+
+	<table id ="data" class="table">
+		    <caption>Student Information</caption>
+			<thead>
+			<tr>
+				<th>ID</th>
+				<th>First Name</th>
+				<th>Last Name</th>
+				<th>Email</th>
+				<th>Location</th>
+				<th>Phone</th>
+			<!-- 	<th>Address</th>
+				<th>Marks</th> -->
+			</tr>
+
+		    </thead>
+
+		<tbody>
+			<!-- insert data from jason file -->
+
+		</tbody>
+
+	</table>
+        <br>
+        <br>
+	<table id ="detaildata" class="table">
+			<caption>Detail information</caption>
+			<tbody>
+				
+			</tbody>
+	</table>
+
+		<br>
+        <br>
+
+
+
+
+	
+</body>
+
+
+</html>
